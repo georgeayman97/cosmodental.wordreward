@@ -38,9 +38,9 @@ class AccessTokensController extends Controller
             'success' => 'success',
             'token' => $token->plainTextToken,
             'user' => $user,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -69,9 +69,9 @@ class AccessTokensController extends Controller
             $filename = date('YmdHi').$file->getClientOriginalName();
             $file->move(public_path('uploads'), $filename);
 
-            $request->photo = 'https://nuweiba.wordreward.net/uploads/'.$filename;
+            $request->photo = 'https://cosmodental.wordreward.net/uploads/'.$filename;
         } else {
-            $request->photo = 'https://nuweiba.wordreward.net/uploads/default.png';
+            $request->photo = 'https://cosmodental.wordreward.net/uploads/default.png';
         }
 
         $userData->update([
@@ -85,9 +85,9 @@ class AccessTokensController extends Controller
         return Response::json([
             'success' => 'success',
             'user' => $userData,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }

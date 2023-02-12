@@ -81,7 +81,7 @@ class User extends Authenticatable
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS => '{
-		"longDynamicLink": "https://nuweiba.page.link/?link=http://www.facebook.com/nuweibadentalclinic/?ref='.$code.'&apn=net.wordreward.nuweiba&ibi=net.wordreward.nuweiba",
+		"longDynamicLink": "https://cosmodental.page.link/?link=https://www.facebook.com/cosmodental/?ref='.$code.'&apn=net.wordreward.cosmodental&ibi=net.wordreward.cosmodental",
 		"suffix": {
 				"option": "SHORT"
 			}

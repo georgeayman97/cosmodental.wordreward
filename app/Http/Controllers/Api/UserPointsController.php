@@ -36,9 +36,9 @@ class UserPointsController extends Controller
                     'success' => 'Error',
                     'message' => 'User Dont have enough points',
                     'user' => $user,
-                    'company_whatsapp'=> '+01093014047',
-                    'company_phone'=> '+01093014047',
-                    'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+                    'company_whatsapp'=> '+01002415182',
+                    'company_phone'=> '+0572196000',
+                    'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
                     'membership_level' => $user->userGroup->name,
                 ], 401);
             }
@@ -83,9 +83,9 @@ class UserPointsController extends Controller
             'success' => 'Success',
             'user' => $user,
             'membership_level' => $user->userGroup->name,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
         ], 200);
     }
 
@@ -109,9 +109,9 @@ class UserPointsController extends Controller
         return Response::json([
             'success' => 'Success',
             'user' => $user,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -134,9 +134,9 @@ class UserPointsController extends Controller
         return Response::json([
             'success' => 'Success',
             'user' => $user,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -153,9 +153,9 @@ class UserPointsController extends Controller
         return Response::json([
             'success' => 'Success',
             'user' => $user,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -172,9 +172,9 @@ class UserPointsController extends Controller
         return Response::json([
             'success' => 'Success',
             'user' => $user,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -192,9 +192,9 @@ class UserPointsController extends Controller
         return Response::json([
             'success' => 'Success',
             'user' => $user,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -209,9 +209,9 @@ class UserPointsController extends Controller
         return Response::json([
             'success' => 'Success',
             'user' => $userData,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -226,9 +226,9 @@ class UserPointsController extends Controller
         return Response::json([
             'success' => 'Success',
             'user' => $userData,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -250,9 +250,9 @@ class UserPointsController extends Controller
             'success' => 'Success',
             'transactions' => $transactions,
             'user' => $user,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -272,9 +272,9 @@ class UserPointsController extends Controller
             'success' => 'Success',
             'notfications' => $notfications,
             'user' => $userData,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }
@@ -289,9 +289,9 @@ class UserPointsController extends Controller
         return Response::json([
             'success' => 'Success',
             'user' => $user,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level' => $user->userGroup->name,
         ], 200);
     }

@@ -52,7 +52,7 @@ class RegisterUserController extends Controller
 		
 		
         if ($request->referer_code == ''){
-            $request->referer_code = "korayem";
+            $request->referer_code = "cosmoDental";
         }else{
             $sign =substr($request->referer_code,0,1);
             if($sign == "+"){
@@ -77,10 +77,10 @@ class RegisterUserController extends Controller
             $filename= date('YmdHi').$file->getClientOriginalName();
             $file->move(public_path('uploads'), $filename);
            
-            $request->photo = 'https://nuweiba.wordreward.net/uploads/'.$filename;
+            $request->photo = 'https://cosmodental.wordreward.net/uploads/'.$filename;
             
         }else{
-            $request->photo = 'https://nuweiba.wordreward.net/uploads/default.png';
+            $request->photo = 'https://cosmodental.wordreward.net/uploads/default.png';
         }
         $enDate = convertDateToEnglish($request->birthdate);
         $user = User::create([
@@ -105,13 +105,13 @@ class RegisterUserController extends Controller
         $user->awardPoints(200);
         $user->sendNotification(
 								$user->device_token,
-								"Welcome To Nuweiba Dental Clinic",
+								"Welcome To Cosmo Dental Clinic",
 								"Congratulations You have won 200 Points welcome points"
 							   );
         $user->notifications_count++;
 		Notification::create([
             'user_id'=>$user->id,
-            'title'=>"Welcome To Nuweiba Dental Clinic",
+            'title'=>"Welcome To Cosmo Dental Clinic",
             'description'=>"Congratulations You have won 200 Points welcome points",
             'status'=>'unread',
         ]);
@@ -144,13 +144,13 @@ class RegisterUserController extends Controller
 			]);
             $user->sendNotification(
                 $user->device_token,
-                "Welcome To Nuweiba Dental Clinic",
+                "Welcome To Cosmo Dental Clinic",
                 "Congratulations You have won 50 Points welcome points from your referal friend"
                );
             $user->notifications_count++;
             Notification::create([
                 'user_id'=>$user->id,
-                'title'=>"Welcome To Nuweiba Dental Clinic",
+                'title'=>"Welcome To Cosmo Dental Clinic",
                 'description'=>"Congratulations You have won 50 Points welcome points from your referal friend",
                 'status'=>'unread',
             ]);
@@ -185,9 +185,9 @@ class RegisterUserController extends Controller
             'status'=> 'Success',
             'token'=>$token->plainTextToken,
             'user' => $user,
-            'company_whatsapp'=> '+01093014047',
-            'company_phone'=> '+01093014047',
-            'company_location'=> 'https://goo.gl/maps/9L7bhbrFVgS2bz7z7',
+            'company_whatsapp'=> '+01002415182',
+            'company_phone'=> '+0572196000',
+            'company_location'=> 'https://goo.gl/maps/sodQ1jbdWE4UZbZE7',
             'membership_level'=>$user->userGroup->name,
         ], 200);
     }
