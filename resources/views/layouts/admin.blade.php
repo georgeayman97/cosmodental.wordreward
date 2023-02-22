@@ -117,29 +117,7 @@
                         {{--                            </li>--}}
                         {{--                        </ul>--}}
                     </li>
-                    <li class="nav-item">
-                        <a href="{{ route('group.index') }}" class="nav-link ultra-sidebar">
-                            <i class="nav-icon fas fa-users"></i>
-                            <p>
-                                UserGroups
-                                {{--                                <i class="right fas fa-angle-left"></i>--}}
-                            </p>
-                        </a>
-                        {{--                        <ul class="nav nav-treeview">--}}
-                        {{--                            <li class="nav-item">--}}
-                        {{--                                <a href="{{route('group.index')}}" class="nav-link">--}}
-                        {{--                                    <i class="far fa-circle nav-icon"></i>--}}
-                        {{--                                    <p>All UserGroups</p>--}}
-                        {{--                                </a>--}}
-                        {{--                            </li>--}}
-                        {{--                            <li class="nav-item">--}}
-                        {{--                                <a href="{{route('group.create')}}" class="nav-link">--}}
-                        {{--                                    <i class="far fa-circle nav-icon"></i>--}}
-                        {{--                                    <p>Create UserGroup</p>--}}
-                        {{--                                </a>--}}
-                        {{--                            </li>--}}
-                        {{--                        </ul>--}}
-                    </li>
+                    
                     <li class="nav-item">
                         <a href="#" class="nav-link ultra-sidebar">
                             <i class="nav-icon fas fa-ellipsis-h"></i>
@@ -254,6 +232,22 @@
                                 <a href="{{ route('show.reseptionist')}}"
                                 class="nav-link ultra-sidebar">
                                     <p>Show Receptionist Accounts</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('group.index') }}" class="nav-link ultra-sidebar">
+                                    <i class="nav-icon fas fa-users"></i>
+                                    <p>
+                                        Groups
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('settings.index') }}" class="nav-link ultra-sidebar">
+                                    <i class="nav-icon fas fa-users"></i>
+                                    <p>
+                                        Settings
+                                    </p>
                                 </a>
                             </li>
                         </ul>

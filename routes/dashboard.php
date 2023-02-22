@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\PointsController;
 use App\Http\Controllers\Admin\TransactionController;
+use App\Http\Controllers\Admin\TransactionTypeController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\UserGroupController;
 use App\Models\UserGroup;
@@ -46,3 +47,5 @@ Route::post('accept-transaction', [TransactionController::class, 'accept'])
     ->name('transactions.accept');
 Route::post('reject-transaction', [TransactionController::class, 'reject'])
     ->name('transactions.reject');
+/*==================================================settings==================================================*/
+Route::resource('settings',TransactionTypeController::class);
