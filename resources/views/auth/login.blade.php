@@ -22,7 +22,7 @@
                     <div class="card-body">
                         <div class="brand-wrapper">
                             <img src="{{ asset('assets/login/images/logo.png') }}" alt="logo" class="logo"
-                                 style="height: 110px;">
+                                 style="height: 275px;">
                         </div>
                         <p class="login-card-description">Sign into your account</p>
                         <x-auth-session-status class="mb-4" :status="session('status')"/>

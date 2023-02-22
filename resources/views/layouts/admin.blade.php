@@ -54,11 +54,11 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="  background-color: #476ac4; box-shadow: 0 14px 28px rgb(149, 149, 149),0 10px 10px rgb(149, 149, 149) !important">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="  background-color: #060128; box-shadow: 0 14px 28px rgb(71, 106, 196),0 10px 10px rgb(71, 106, 196) !important;">
         <!-- Brand Logo -->
         <a href="{{route('dashboard')}}" class="brand-link">
             <img src="{{ asset('assets/dist/img/logo.png') }}"
-                 class="brand-image " style="opacity: .8; max-height: 44px; width: 44px;">
+                 class="brand-image " style="opacity: .8; max-height: 44px; width: 51px;">
             <span class="brand-text font-weight-light" style="color: white;">Admin Panel</span>
         </a>
         <!-- Sidebar -->

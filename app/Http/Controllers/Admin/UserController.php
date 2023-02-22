@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin;
 use App\Models\User;
 use App\Models\UserGroup;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
@@ -54,9 +56,13 @@ class UserController extends Controller
         return view('admin.user.index', compact('users'));
     }
 
-    public function edit(User $user)
+    public function edit($id)
     {
         //
+        $user = Admin::findOrFail($id);
+        return view('admin.admin.edit',[
+            'user' => $user,
+        ]);
     }
 
     public function update(User $user)
@@ -68,6 +74,25 @@ class UserController extends Controller
         $user->update($validated);
 
         return back()->with(['msg' => 'Changed Group Successfully']);
+    }
+
+
+    public function updateUser(Request $request, $id)
+    {
+        request()->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+        ]);
+        $user = Admin::findOrFail($id);
+
+        $user->update([
+            'name' => request()->name,
+            'phone' => request()->phone,
+            'email' => request()->email,
+            'password' => Hash::make(request()->password),
+        ]);
+        return redirect()->route('dashboard')->with('success', trans('User.updated'));
+
     }
 
     public function destroy($id)

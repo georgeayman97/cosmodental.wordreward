@@ -9,6 +9,7 @@ use App\Models\UserGroup;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('admin')->resource('user', UserController::class);
+Route::middleware('admin')->put('userupdate/{user}', [UserController::class,'updateUser'])->name('user.updateUser');
 Route::middleware('admin')->resource('group', UserGroupController::class);
 /*==================================================Points==================================================*/
 Route::post('{user}/add_points', [PointsController::class, 'addPoints'])

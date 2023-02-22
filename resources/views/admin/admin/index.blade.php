@@ -10,23 +10,12 @@
             font-weight: bolder;
             font-size: larger;
         }
-
         td {
             font-weight: normal;
         }
     </style>
 @endsection
 
-@section('scripts')
-    <script>
-        $(".addPoints").on('click', e => {
-            $('#points-modal-' + e.target.id).modal('show')
-        })
-        $(".redeemPoints").on('click', e => {
-            $('#points-modal-' + e.target.id).modal('show')
-        })
-    </script>
-@endsection
 
 @section('content')
     <div class="administrators index">
@@ -42,6 +31,7 @@
                         <th>BIRTHDATE</th>
                         <th>MOBILE</th>
                         <th>STATUS</th>
+                        <th>ACTIONS</th>
                     </tr>
                     @foreach($users as $key => $user)
                         <tr>
@@ -55,6 +45,8 @@
                             <td>{{ $user->birthdate }}</td>
                             <td>{{ $user->phone }}</td>
                             <td>{{ $user->status }}</td>
+                            <td><a class="btn btn-primary" href="{{ route('user.edit',$user->id)}} ">Edit</a></td>
+
                         </tr>
                     @endforeach
                 </table>
