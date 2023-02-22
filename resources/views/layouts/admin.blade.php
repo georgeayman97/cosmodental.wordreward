@@ -246,7 +246,7 @@
                                 <a href="{{ route('settings.index') }}" class="nav-link ultra-sidebar">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>
-                                        Settings
+                                        Points Controls
                                     </p>
                                 </a>
                             </li>
