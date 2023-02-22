@@ -33,16 +33,11 @@
                             <td>{{ $key + 1  }}</td>
                             <td>{{ $setting->name }}</td>
                             <td>{{ $setting->default_points }}</td>
-                            <td><a class="btn btn-primary" href="{{ route('setting.edit',$setting->id)}} ">Edit</a></td>
+                            <td><a class="btn btn-primary" href="{{ route('settings.edit',$setting->id)}} ">Edit</a></td>
 
                         </tr>
                     @endforeach
                 </table>
-                @isset($groups)
-                    <div class="paginating-container">
-                        {{ $users->links() }}
-                    </div>
-                @endisset
             </div>
         </div>
 

@@ -9,7 +9,7 @@ EDIT {{ $setting->name }} Points
     @method('put')
         <div class="form-group">
             <label for="exampleInputEmail1 @error('name') is-invalid @enderror">Name</label>
-            <input type="text" class="form-control" value="{{ old('name',$setting->name)}}" id="name" name="name" placeholder="Enter Group Name">
+            <input type="text" class="form-control" value="{{ old('name',$setting->name)}}" id="name" name="name" placeholder="Enter Name" readonly>
             @error('name')
                 <div class ="invalid-feedback">
                     {{$message}}
