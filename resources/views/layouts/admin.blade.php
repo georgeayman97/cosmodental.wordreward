@@ -235,18 +235,23 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('group.index') }}" class="nav-link ultra-sidebar">
-                                    <i class="nav-icon fas fa-users"></i>
-                                    <p>
-                                        Groups
-                                    </p>
+                                <a href="{{ route('messages.index')}}"
+                                class="nav-link ultra-sidebar">
+                                    <p>Messages Controls</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('settings.index') }}" class="nav-link ultra-sidebar">
-                                    <i class="nav-icon fas fa-users"></i>
                                     <p>
                                         Points Controls
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('group.index') }}" class="nav-link ultra-sidebar">
+                                    <i class="nav-icon fas fa-users"></i>
+                                    <p>
+                                        Groups
                                     </p>
                                 </a>
                             </li>

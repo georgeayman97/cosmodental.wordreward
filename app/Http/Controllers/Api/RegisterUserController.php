@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Message;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -102,17 +103,20 @@ class RegisterUserController extends Controller
 		$userCode = $user->generateUserCode();
         $user->refer_code = $user->id . $userCode;
 		$user->user_code = $user->id . $userCode;
+        $messageRegistration = Message::where('name','Registration Message')->first();
+        $registerTitleMsg = $messageRegistration->title;
+        $registerDescMsg = $messageRegistration->msg;
         $user->awardPoints(200);
         $user->sendNotification(
 								$user->device_token,
-								"Welcome To Cosmo Dental Clinic",
-								"Congratulations You have won 200 Points welcome points"
+								$registerTitleMsg,
+								$registerDescMsg
 							   );
         $user->notifications_count++;
 		Notification::create([
             'user_id'=>$user->id,
-            'title'=>"Welcome To Cosmo Dental Clinic",
-            'description'=>"Congratulations You have won 200 Points welcome points",
+            'title'=>$registerTitleMsg,
+            'description'=>$registerDescMsg,
             'status'=>'unread',
         ]);
         $transaction = Transaction::create([

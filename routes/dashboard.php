@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\PointsController;
 use App\Http\Controllers\Admin\TransactionController;
@@ -49,3 +50,4 @@ Route::post('reject-transaction', [TransactionController::class, 'reject'])
     ->name('transactions.reject');
 /*==================================================settings==================================================*/
 Route::resource('settings',TransactionTypeController::class);
+Route::resource('messages',MessageController::class);
